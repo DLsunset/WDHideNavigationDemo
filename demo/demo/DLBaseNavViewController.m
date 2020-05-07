@@ -21,8 +21,7 @@
     self.delegate = self;
 }
 
-//这里我在viewController前面加了一个遵守协议，为了消除下面设置delegate = viewController的时候报警告。否则看着难受
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController <DLNoNav>*)viewController animated:(BOOL)animated {
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
     //如果控制器遵守了DLNoNav协议，则需要隐藏导航栏
     BOOL noNav = [[viewController class] conformsToProtocol:@protocol(DLNoNav)];

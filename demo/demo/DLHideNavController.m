@@ -17,9 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.view.backgroundColor = [UIColor brownColor];
     
-    self.view.backgroundColor = [UIColor redColor];
     UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(40, 100, 100, 100)];
     [btn1 setTitle:@"有导航栏" forState:UIControlStateNormal];
     [self.view addSubview:btn1];
