@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DLNoNav <UIGestureRecognizerDelegate>
+@protocol DLNoNav 
 //只要遵守了这个协议，该控制器就会隐藏导航栏
 @end
 
